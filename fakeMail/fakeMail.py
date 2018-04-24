@@ -77,7 +77,8 @@ if __name__ == "__main__" :
     mSUBJ     = namespace.sb
     mTEXT     = namespace.txt
 
-    print mHOST
+    if mDOMAIN == None:
+        mDOMAIN = mHOST
 
     try:
         sSMTP = sockSMTP(mHOST,mPORT)
