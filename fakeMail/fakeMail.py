@@ -45,7 +45,7 @@ class sockSMTP():
         return data
 
     def send(self,msg):
-        print "[DEBUG-SEND-MSG]"+msg
+        #print "[DEBUG-SEND-MSG]"+msg
         self.sSMTP.sendall(msg)
 
 
